@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1A1815;
+  color: #C8C4BC;
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background: #C9A96E;
+  color: #1A1815;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #1A1815; }
+::-webkit-scrollbar-thumb { background: #2E2B27; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #7A766F; }
+
+/* Typography utilities */
+.font-display { font-family: var(--font-cormorant); }
+.font-body { font-family: var(--font-inter); }
+.font-mono { font-family: var(--font-jetbrains); }
+
+/* Hairline divider */
+.hairline {
+  border: none;
+  border-top: 1px solid #2E2B27;
+}
+
+.hairline-light {
+  border: none;
+  border-top: 1px solid #E2DED6;
+}
+
+/* Label style — matching logo's "CAPITAL" tracked caps */
+.label {
+  font-family: var(--font-jetbrains);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #7A766F;
+}
+
+.label-accent {
+  font-family: var(--font-jetbrains);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #C9A96E;
+}
+
+/* Accent gold line */
+.accent-rule {
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: #C9A96E;
+}
+
+/* Transition base */
+.transition-base {
+  transition: all 0.25s ease;
+}
+
+/* Reading prose */
+.prose-research {
+  font-family: var(--font-inter);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #C8C4BC;
+  max-width: 68ch;
+}
+
+.prose-research p + p {
+  margin-top: 1.5em;
+}
+
+.prose-research h2 {
+  font-family: var(--font-cormorant);
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #F5F3EE;
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+}
+
+.prose-research h3 {
+  font-family: var(--font-jetbrains);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #C9A96E;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.prose-research h4 {
+  font-family: var(--font-cormorant);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #F5F3EE;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.prose-research strong {
+  color: #F5F3EE;
+  font-weight: 600;
+}
+
+.prose-research em {
+  color: #C8C4BC;
+}
+
+.prose-research a {
+  color: #C9A96E;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-research ul,
+.prose-research ol {
+  margin: 1.25em 0;
+  padding-left: 1.5em;
+}
+
+.prose-research li {
+  margin: 0.5em 0;
+}
+
+.prose-research li::marker {
+  color: #C9A96E;
+}
+
+.prose-research hr {
+  border: none;
+  border-top: 1px solid #2E2B27;
+  margin: 2.5em 0;
+}
+
+.prose-research code {
+  font-family: var(--font-jetbrains);
+  font-size: 0.85em;
+  color: #C9A96E;
+  background: #1A1815;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+}
+
+.prose-research blockquote,
+.prose-research .prose-blockquote {
+  margin: 1.75em 0;
+  padding: 1em 1.5em;
+  border-left: 2px solid #C9A96E;
+  background: #13110E;
+  color: #C8C4BC;
+  font-style: italic;
+}
+
+.prose-research blockquote p,
+.prose-research .prose-blockquote p {
+  margin: 0;
+}
+
+.prose-table-wrap {
+  margin: 2em 0;
+  overflow-x: auto;
+  border: 1px solid #2E2B27;
+}
+
+.prose-research table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-inter);
+  font-size: 0.8125rem;
+}
+
+.prose-research th {
+  font-family: var(--font-jetbrains);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C9A96E;
+  text-align: left;
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #2E2B27;
+  background: #13110E;
+  white-space: nowrap;
+}
+
+.prose-research td {
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #2E2B27;
+  color: #C8C4BC;
+  vertical-align: top;
+}
+
+.prose-research tr:last-child td {
+  border-bottom: none;
+}
+
+/* Page transitions */
+.page-enter {
+  animation: fadeUp 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Light surface override for paper sections */
+.surface-paper {
+  background: #F5F3EE;
+  color: #1A1815;
+}
+
+.surface-paper .label {
+  color: #7A766F;
+}
+
+/* Card hover states via CSS */
+.research-card {
+  border: 1px solid #2E2B27;
+  background: #131110;
+  transition: border-color 0.25s ease;
+}
+.research-card:hover {
+  border-color: rgba(201, 169, 110, 0.3);
+}
+
+.briefing-row {
+  border-bottom: 1px solid #2E2B27;
+  transition: padding-left 0.2s ease, background 0.2s ease;
+}
+.briefing-row:hover {
+  padding-left: 10px;
+  background: #13110E;
+}
+
+.nav-link {
+  transition: color 0.2s ease;
+}
+.nav-link:hover {
+  color: #C9A96E !important;
+}
+
+.cta-outline {
+  border: 1px solid #2E2B27;
+  transition: border-color 0.2s ease;
+}
+.cta-outline:hover {
+  border-color: #7A766F;
+}
+
+.footer-link {
+  transition: color 0.2s ease;
+}
+.footer-link:hover {
+  color: #C9A96E !important;
+}
