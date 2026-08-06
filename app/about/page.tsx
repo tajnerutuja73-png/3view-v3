@@ -300,6 +300,107 @@ export default function AboutPage() {
 
       </section>
 
+{/* Leadership */}
+
+<section
+  className="py-24 border-b"
+  style={{
+    background: "#111009",
+    borderColor: "#2E2B27",
+  }}
+>
+  <div className="max-w-5xl mx-auto px-6 lg:px-12">
+
+    <span className="label-accent mb-10 block">
+      Leadership
+    </span>
+
+    <div
+      className="p-10 transition-all duration-300 hover:border-[#C9A96E]"
+      style={{
+        border: "1px solid #2E2B27",
+        background: "#131110",
+      }}
+    >
+
+      <div
+        className="w-14 h-14 flex items-center justify-center mb-8"
+        style={{
+          border: "1px solid #2E2B27",
+          background: "#1A1815",
+        }}
+      >
+        <span
+          style={{
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            color: "#C9A96E",
+            fontSize: "1.2rem",
+          }}
+        >
+          RJ
+        </span>
+      </div>
+
+      <h2
+        style={{
+          fontFamily: "'Cormorant Garamond', Georgia, serif",
+          fontSize: "2.1rem",
+          fontWeight: 400,
+          color: "#F5F3EE",
+        }}
+      >
+        Rajat Jain
+      </h2>
+
+      <p
+        style={{
+          fontFamily: "'JetBrains Mono', monospace",
+          color: "#C9A96E",
+          fontSize: "0.72rem",
+          letterSpacing: "0.18em",
+          textTransform: "uppercase",
+          marginTop: "12px",
+          marginBottom: "30px",
+        }}
+      >
+        Founder & Head of Research
+      </p>
+
+      <div
+        style={{
+          fontFamily: "'Inter', sans-serif",
+          color: "#7A766F",
+          lineHeight: 1.9,
+          fontSize: "1rem",
+        }}
+      >
+        <p>
+          Rajat Jain is a Chartered Accountant with experience working with
+          high-net-worth individuals, family offices and sophisticated
+          investors across Indian capital markets. His research combines
+          rigorous fundamental analysis, financial modelling and capital
+          allocation with a long-term investment philosophy.
+        </p>
+
+        <p className="mt-5">
+          He founded ThirdView Capital to build an independent research
+          platform focused on publishing high-quality, long-form equity
+          research free from investment banking relationships, sponsored
+          coverage and short-term market narratives.
+        </p>
+
+        <p className="mt-5">
+          Every report published by ThirdView reflects the firm's philosophy
+          of evidence-driven research, intellectual honesty and long-term
+          thinking.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+      
       {/* Coverage */}
 
       <section
